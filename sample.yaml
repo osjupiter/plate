@@ -1,0 +1,9 @@
+header: >
+  header1,header2,header3
+
+template: >
+  data1, ${data2}, data3
+record: 
+  - data2 : A
+  - data2 : B
+  - data2 : C
