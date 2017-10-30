@@ -107,8 +107,10 @@ func interface2String(data interface{}) string {
 		return fmt.Sprintf("%d", data.(int))
 	case int32:
 		return fmt.Sprintf("%d", data.(int32))
+	case nil:
+		return ""
 	default:
-		panic("cant toString " + fmt.Sprintf("%#v", data))
+		fmt.Fprintf(os.Stderr, "cant toString "+fmt.Sprintf("%#v", data))
 	}
 	return ""
 }

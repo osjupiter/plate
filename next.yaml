@@ -4,7 +4,7 @@ template: >
   ${datetime},1,hoge@hoge.com,テスト,テスト,テスト,テスト,19921002,1,2470008,大阪府,テスト,テスト,テストヴィル,08020123413,08020123413,,,,,,,,,,,,,,,,${mvnoServiceNo},${dataPlan},${voicePlan},,,27000000,,,0,テストヴィル,テスト,テスト,テスト,,,,,,,,,2470008,岩手県,テスト,テストヴィル,テストヴィル,08020123413,0,${simType},${isMnp},${mnpNumber},${mnpTel},${mnpyyyyMMdd},,,${simType},,
 generate:
   number:
-    fmt : "%012d" 
+    fmt : "pcdp%s" 
     args: [unixtime]
      
 record: 
